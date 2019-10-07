@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form method="POST">
+            <p>
+                <label for="pseudo">Votre addition</label>
+                <input type="number" name="number1"/> + <input type="number" name="number2"/> <input type="submit" formaction="/addition" value="Somme" /> 
+            </p>
+        </form>
+
+        <form method="POST">
+            <p>
+                <label for="pseudo">Votre soustraction</label>
+                <input type="number" name="number1"/> - <input type="number" name="number2"/> <input type="submit" formaction="/soustraction" value="Différence" /> 
+            </p>
+        </form>
+
+        <form method="POST">
+            <p>
+                <label for="pseudo">Votre multiplication</label>
+                <input type="number" name="number1"/> * <input type="number" name="number2"/> <input type="submit" formaction="/multiplication" value="Produit" /> 
+            </p>
+        </form>
+
+        <form method="POST">
+            <p>
+                <label for="pseudo">Votre division</label>
+                <input type="number" name="number1"/> / <input type="number" name="number2"/> <input type="submit" formaction="/division" value="Quotient" /> 
+            </p>
+        </form>
+
+        <form method="POST">
+             <input type="submit" formaction="/clear" value="Clear"/> 
+        </form>
+        <span><%= resultat %></span> 
+        
+    </body> 
+
+    <!-- <body>
+        <form method="POST">
+            <p>
+                <label for="pseudo">Votre addition</label>
+                <input type="number" name="number1"/> + <input type="number" name="number2"/> <input type="submit" formaction="/addition" value="Somme" /> 
+            </p>
+       
+        
+            <p>
+                <label for="pseudo">Votre soustraction</label>
+                <input type="number" name="number1"/> - <input type="number" name="number2"/> <input type="submit" formaction="/soustraction" value="Différence" /> 
+            </p>
+        
+
+       
+            <p>
+                <label for="pseudo">Votre multiplication</label>
+                <input type="number" name="number1"/> * <input type="number" name="number2"/> <input type="submit" formaction="/multiplication" value="Produit" /> 
+            </p>
+        
+
+     
+            <p>
+                <label for="pseudo">Votre division</label>
+                <input type="number" name="number1"/> / <input type="number" name="number2"/> <input type="submit" formaction="/division" value="Quotient" /> 
+            </p>
+        
+
+        
+             <input type="submit" formaction="/clear" value="Clear"/> 
+             <span><%= resultat %></span> 
+        </form>
+       
+        
+    </body> -->
+</html>
